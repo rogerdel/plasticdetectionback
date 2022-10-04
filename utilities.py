@@ -2,8 +2,6 @@ import string
 import os
 import random
 import numpy as np
-from dotenv import load_dotenv
-load_dotenv()
 
 filenameSize = int(os.getenv('file_name_size'))
 saveDir      = os.getenv('save_dir')

@@ -1,0 +1,13 @@
+version: '3'
+services:
+  detection:
+    image: plastic_detection
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "${port}:${port}"
+    volumes:
+      - ./plastic:/app/plastic
+      - ./public/files:/app/public/files 
+      - ./models:/app/models
